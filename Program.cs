@@ -6,11 +6,7 @@ namespace GitHubActionsExample
     {
         static void Main(string[] args)
         {
-            static string X()
-            {
-                return "\"Hello World! Dotnet Test!!!\"";
-            }
-            Console.WriteLine(X());
+            Console.WriteLine("\"Hello World! Dotnet Test!!!\"");
         }
     }
 }
