@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: docker://gableroux/unity3d:2018.4.9f1
       with:
-        args: ls /opt/Unity/Editor/Unity/Editor/Data/Managed
+        args: ls /opt/Unity/Editor/Unity/
 
   job1:
     runs-on: windows-latest
