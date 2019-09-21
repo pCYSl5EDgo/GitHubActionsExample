@@ -12,6 +12,15 @@ jobs:
     container: gableroux/unity3d:2018.4.9f1
     steps:
 
+      - run: mkdir -p path/to/artifact
+
+      - run: echo hello > path/to/artifact/world.txt
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: my-artifact
+          path: path/to/artifact
+
       - name: Opt
         run: |
           cd /opt/Unity/Editor/Data/Managed/UnityEngine/
@@ -20,4 +29,4 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: dll
-          path: /opt/Unity/Editor/Data/Managed/UnityEngine
+          path: /opt/Unity/Editor/Data/Managed/UnityEngine/
