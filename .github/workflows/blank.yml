@@ -24,5 +24,5 @@ jobs:
 
       - name: Opt
         run: |
-          cd /opt/Unity/Editor
+          cd /opt/Unity/Editor/Data/Managed/
           ls
