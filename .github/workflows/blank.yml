@@ -8,6 +8,7 @@ on:
 
 jobs:
   job0:
+    runs-on: ubuntu-latest
     container: gableroux/unity3d:2018.4.9f1
     steps:
       
