@@ -18,10 +18,6 @@ jobs:
         run: pwd
 
       - name: Change Directory
-        run: cd /__w
-
-      - name: Change Directory
-        run: cd ./GitHubActionsExample
-
-      - name: List Show
-        run: ls
+        run: |
+          cd /__w
+          ls
