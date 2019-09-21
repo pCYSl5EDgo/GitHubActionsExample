@@ -16,7 +16,7 @@ jobs:
         run: pwd
 
       - name: Change Directory
-        run: cd /opt/Unity/Editor/Unity/
+        run: cd /
 
       - name: List Show
         run: ls
