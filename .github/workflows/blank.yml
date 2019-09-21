@@ -13,7 +13,10 @@ jobs:
     steps:
       
       - name: Show Current Directory
-        run: |
-          pwd
-          ls
-        
+        run: pwd
+
+      - name: Change Directory
+        run: cd /opt/Unity/Editor/Unity/
+
+      - name: List Show
+        run: ls
