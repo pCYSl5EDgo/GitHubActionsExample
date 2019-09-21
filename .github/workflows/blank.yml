@@ -14,19 +14,11 @@ jobs:
 
       - run: mkdir -p path/to/artifact
 
-      - run: echo hello > path/to/artifact/world.txt
+      - name: Opt
+        run: |
+          cp /opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll path/to/artifact
 
       - uses: actions/upload-artifact@master
         with:
           name: my-artifact
           path: path/to/artifact
-
-      - name: Opt
-        run: |
-          cd /opt/Unity/Editor/Data/Managed/UnityEngine/
-          ls
-      
-      - uses: actions/upload-artifact@master
-        with:
-          name: dll
-          path: /opt/Unity/Editor/Data/Managed/UnityEngine/
