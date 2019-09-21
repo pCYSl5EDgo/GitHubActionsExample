@@ -12,14 +12,15 @@ jobs:
     container: gableroux/unity3d:2018.4.9f1
     steps:
       
+      -uses: actions/checkout@v1
+
       - name: Show Current Directory
         run: pwd
         shell: bash
 
       - name: Change Directory
-        run: cd /
+        run: cd /__w
         shell: bash
 
       - name: List Show
-        run: ls
-        shell: bash
+        run: cd ./GitHubActionsExample
