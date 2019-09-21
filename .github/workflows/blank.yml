@@ -16,11 +16,9 @@ jobs:
 
       - name: Show Current Directory
         run: pwd
-        shell: bash
 
       - name: Change Directory
         run: cd /__w
-        shell: bash
 
-      - name: List Show
+      - name: Change Directory
         run: cd ./GitHubActionsExample
