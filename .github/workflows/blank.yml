@@ -11,18 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     container: gableroux/unity3d:2018.4.9f1
     steps:
-      
-      - uses: actions/checkout@v1
-
-      - name: Show Current Directory
-        run: pwd
-
-      - name: Change Directory
-        run: |
-          cd /opt
-          ls
 
       - name: Opt
         run: |
-          cd /opt/Unity/Editor/Data/Managed/
+          cd /opt/Unity/Editor/Data/Managed/UnityEngine/
           ls
+      
+      - uses: actions/upload-artifact@master
+        with:
+          name: dll
+          path: /opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
