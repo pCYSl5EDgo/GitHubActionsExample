@@ -8,9 +8,12 @@ on:
 
 jobs:
   job0:
-    uses: docker://gableroux/unity3d:2018.4.9f1
-    with:
-      args: echo "HogeHoge"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: docker://gableroux/unity3d:2018.4.9f1
+      with:
+        args: echo "HogeHoge"
+
   job1:
     runs-on: windows-latest
     
