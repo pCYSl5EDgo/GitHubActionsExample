@@ -8,18 +8,11 @@ on:
 
 jobs:
   job0:
-    runs-on: ubuntu-latest
+    container: gableroux/unity3d:2018.4.9f1
     steps:
-    - uses: docker://gableroux/unity3d:2018.4.9f1
-      with:
-        args: ls /opt/Unity/Editor/Unity/
-
-  job1:
-    runs-on: windows-latest
-    
-    steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '3.0.100-rc1-014190'
-    - run: dotnet run
+      
+      - name: Show Current Directory
+        run: |
+          pwd
+          ls
+        
