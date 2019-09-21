@@ -14,9 +14,12 @@ jobs:
       
       - name: Show Current Directory
         run: pwd
+        shell: bash
 
       - name: Change Directory
         run: cd /
+        shell: bash
 
       - name: List Show
         run: ls
+        shell: bash
