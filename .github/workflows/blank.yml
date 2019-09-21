@@ -19,10 +19,10 @@ jobs:
 
       - name: Change Directory
         run: |
-          cd /
+          cd /opt
           ls
 
       - name: Opt
         run: |
-          cd /opt/Unity/Editor/Unity/
+          cd /opt/Unity
           ls
