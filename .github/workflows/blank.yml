@@ -12,6 +12,11 @@ jobs:
     container: gableroux/unity3d:2018.4.9f1
     steps:
 
+      - uses: pCYSl5EDgo/UnityCreateLicenseFile
+        with:
+          unity-tag: 2018.4.9f1
+          directory: XXX
+
       - run: mkdir -p path/to/artifact
 
       - name: Opt
