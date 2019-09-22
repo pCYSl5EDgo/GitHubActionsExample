@@ -12,7 +12,7 @@ jobs:
     container: gableroux/unity3d:2018.4.9f1
     steps:
 
-      - uses: pCYSl5EDgo/UnityCreateLicenseFile
+      - uses: pCYSl5EDgo/UnityCreateLicenseFile@master
         with:
           unity-tag: 2018.4.9f1
           directory: XXX
